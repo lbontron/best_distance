@@ -14,7 +14,6 @@ for i in range(0, nbMutateMax):
     p.gen_new_population(nbRdmPath)
     if(p.np_is_better()):
         p.use_new_population()
-        self.assertTrue((bestPath.distance) >= (p.get_best_ind().distance))
         bestPath = p.get_best_ind()
         print(bestPath)
 
